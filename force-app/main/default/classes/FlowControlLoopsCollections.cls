@@ -94,7 +94,14 @@ public with sharing class FlowControlLoopsCollections {
      * @return A string indicating whether the number is "Positive", "Negative", or "Zero", or null if the number is null.
      */
     public static String checkNumber(Integer a) {
-        return null; // Replace null with the variable you used to store the result
+        if(a > 0){
+            return ('Positive');
+        }else if(a < 0){
+            return ('Negative');
+        }else if(a == 0){
+            return ('Zero');
+        }else { return null;
+        }
     }
 
     /**
@@ -106,7 +113,14 @@ public with sharing class FlowControlLoopsCollections {
      * @return A string indicating whether the number is "Even" or "Odd", or null if the number is null.
      */
     public static String checkEvenOdd(Integer a) {
-        return null; // Replace null with the variable you used to store the result
+        if(a == null){
+            return null;
+        }
+        Integer result = System.Math.mod(a,2);
+        if (result == 0) {
+            return (String)('Even');
+        } else {return (String)('Odd');}
+
     }
 
     /**
