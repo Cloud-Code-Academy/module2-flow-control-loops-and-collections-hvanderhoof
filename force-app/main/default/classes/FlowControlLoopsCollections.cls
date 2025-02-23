@@ -189,15 +189,14 @@ public with sharing class FlowControlLoopsCollections {
      */
     public static String returnHelloWorld() {
         // Initialize the result String
+        String result = 'Hello World!';
 
         // Use a for loop to append 'Hello World!;' to the result string three times
-        /* 
-         for (){
-            
-         }
-        */
-
-        return null; // Replace null with the variable you used to store the result
+        for(Integer i = 1; i < 3; i++){
+            result += '; Hello World!';
+        }
+        result += '; '; //This is adding the semicolon to the 3rd hello world 
+        return result;
     }
 
     /**
